@@ -9,10 +9,10 @@ import Foundation
 
 @Observable
 class HotkeyCategoryViewModel {
-    var hotketCategoryModels: [HotKeyCategoryModel] = []
+    var hotkeyCategoryModels: [HotkeyCategoryModel] = []
     
     init() {
-        let productCategory: HotKeyCategoryModel = .init(
+        let productCategory: HotkeyCategoryModel = .init(
             name: "Product",
             models: [
                 .init(
@@ -40,7 +40,7 @@ class HotkeyCategoryViewModel {
                 ),
             ]
         )
-        let schemeCategory: HotKeyCategoryModel = .init(
+        let schemeCategory: HotkeyCategoryModel = .init(
             name: "Scheme",
             models: [
                 .init(
@@ -55,7 +55,7 @@ class HotkeyCategoryViewModel {
                 ),
             ]
         )
-        let hideOrShowPanelsCategory: HotKeyCategoryModel = .init(
+        let hideOrShowPanelsCategory: HotkeyCategoryModel = .init(
             name: "Hide or Show Panels",
             models: [
                 .init(
@@ -86,7 +86,7 @@ class HotkeyCategoryViewModel {
                 ),
             ]
         )
-        let navigationCategory: HotKeyCategoryModel = .init(
+        let navigationCategory: HotkeyCategoryModel = .init(
             name: "Navigation",
             models: [
                 .init(
@@ -136,7 +136,7 @@ class HotkeyCategoryViewModel {
                 ),
             ]
         )
-        let inspectorCategory: HotKeyCategoryModel = .init(
+        let inspectorCategory: HotkeyCategoryModel = .init(
             name: "Inspector",
             models: [
                 .init(
@@ -173,7 +173,7 @@ class HotkeyCategoryViewModel {
                 ),
             ]
         )
-        let structureCategory: HotKeyCategoryModel = .init(
+        let structureCategory: HotkeyCategoryModel = .init(
             name: "Structure",
             models: [
                 .init(
@@ -209,7 +209,7 @@ class HotkeyCategoryViewModel {
                 ),
             ]
         )
-        let editingCategory: HotKeyCategoryModel = .init(
+        let editingCategory: HotkeyCategoryModel = .init(
             name: "Editing",
             models: [
                 .init(
@@ -238,7 +238,7 @@ class HotkeyCategoryViewModel {
                 ),
             ]
         )
-        let miscCategory: HotKeyCategoryModel = .init(
+        let miscCategory: HotkeyCategoryModel = .init(
             name: "Miscellaneous",
             models: [
                 .init(
@@ -273,7 +273,7 @@ class HotkeyCategoryViewModel {
                 ),
             ]
         )
-        let debuggingCategory: HotKeyCategoryModel = .init(
+        let debuggingCategory: HotkeyCategoryModel = .init(
             name: "Debugging",
             models: [
                 .init(
@@ -292,7 +292,7 @@ class HotkeyCategoryViewModel {
                 ),
             ]
         )
-        let fileMenuCommandsCategory: HotKeyCategoryModel = .init(
+        let fileMenuCommandsCategory: HotkeyCategoryModel = .init(
             name: "File menu commands",
             models: [
                 .init(
@@ -310,7 +310,7 @@ class HotkeyCategoryViewModel {
                 ),
             ]
         )
-        let sourceControlCategory: HotKeyCategoryModel = .init(
+        let sourceControlCategory: HotkeyCategoryModel = .init(
             name: "Source Control",
             models: [
                 .init(
@@ -329,7 +329,7 @@ class HotkeyCategoryViewModel {
             ]
         )
         
-        hotketCategoryModels = [
+        hotkeyCategoryModels = [
             productCategory,
             schemeCategory,
             hideOrShowPanelsCategory,

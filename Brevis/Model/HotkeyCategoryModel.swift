@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct HotKeyCategoryModel: Identifiable {
+struct HotkeyCategoryModel: Identifiable {
     let id = UUID()
     
     let name: String
-    let models: [HotKeyModel]
+    let models: [HotkeyModel]
 }

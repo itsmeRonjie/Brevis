@@ -11,7 +11,7 @@ import SwiftUI
 struct BrevisApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainHotkeyView()
         }
     }
 }

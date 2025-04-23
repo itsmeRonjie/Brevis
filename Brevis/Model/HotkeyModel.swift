@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct HotKeyModel: Identifiable {
+struct HotkeyModel: Identifiable {
     let id = UUID()
     
     let modifiers: [Modifier]
