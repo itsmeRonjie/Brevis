@@ -23,7 +23,7 @@ struct MainHotkeyView: View {
                     )
                 }
             }
-            .navigationTitle("XCode Hotkeys")
+            .navigationTitle("Xcode Hotkeys")
             .searchable(text: $searchQuery, prompt: "Search...")
         }
     }

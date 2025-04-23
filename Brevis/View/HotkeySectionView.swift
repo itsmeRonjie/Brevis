@@ -23,9 +23,10 @@ struct HotkeySectionView: View {
         if !filteredHotkeyModels.isEmpty {
             Section {
                 ForEach(filteredHotkeyModels) { hotkeyModel in
-                    // TODO: Hotkey Row
-                    Text(hotkeyModel.text)
-                    Text(hotkeyModel.description)
+                    HotkeyRowView(
+                        hotkeyModel: hotkeyModel,
+                        searchQuery: searchQuery
+                    )
                 }
             } header: {
                 Text(categoryName)
