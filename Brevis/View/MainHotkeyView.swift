@@ -11,7 +11,6 @@ struct MainHotkeyView: View {
     @State private var searchQuery: String = ""
     var vm: HotkeyCategoryViewModel = HotkeyCategoryViewModel()
     
-    
     var body: some View {
         NavigationStack {
             Form {
