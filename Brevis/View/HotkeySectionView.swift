@@ -16,7 +16,13 @@ struct HotkeySectionView: View {
     let sectionHeaderColor: Color = .red
     
     var filteredHotkeyModels: [HotkeyModel] {
-        hotkeyModels
+        if searchQuery.count <= 1 {
+            return hotkeyModels
+        }
+        return hotkeyModels.filter {
+            $0.text.lowercased().contains(searchQuery.lowercased())
+        }
+        
     }
     
     var body: some View {
