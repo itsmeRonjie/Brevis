@@ -102,7 +102,7 @@ class HotkeyCategoryViewModel {
                 .init(
                     modifiers: [.command],
                     character: "3",
-                    text: "boomarks"
+                    text: "bookmarks"
                 ),
                 .init(
                     modifiers: [.command],

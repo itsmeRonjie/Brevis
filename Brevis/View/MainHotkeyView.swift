@@ -25,6 +25,7 @@ struct MainHotkeyView: View {
             }
             .navigationTitle("Xcode Hotkeys")
             .searchable(text: $searchQuery, prompt: "Search...")
+            LegendsView()
         }
     }
 }
