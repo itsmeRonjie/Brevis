@@ -1,6 +1,4 @@
-# Brevis
-
-Xcode Hotkeys
+# Brevis (Xcode Hotkeys)
 
 for: 
  - iPhone
