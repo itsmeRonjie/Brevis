@@ -42,9 +42,7 @@ struct LegendsViewColumn: View {
 
 struct LegendsKeyValueRow: View {
     let modifier: Modifier
-    
-    let modifierFont: Font = .body
-    
+    let modifierFont: Font = Theme.modifierFont
     
     var body: some View {
         Text("\(modifier.rawValue) = \(modifier.description)")

@@ -10,7 +10,7 @@ import SwiftUI
 struct MainHotkeyView: View {
     @State private var searchQuery: String = ""
     var vm: HotkeyCategoryViewModel = HotkeyCategoryViewModel()
-    
+        
     var body: some View {
         NavigationStack {
             Form {
@@ -21,11 +21,16 @@ struct MainHotkeyView: View {
                         searchQuery: searchQuery
                     )
                 }
+                .listStyle(Theme.listStyle)
             }
             .navigationTitle("Xcode Hotkeys")
             .searchable(text: $searchQuery, prompt: "Search...")
             LegendsView()
         }
+        .frame(
+            minWidth: Theme.frameWidth,
+            minHeight: Theme.frameHeight
+        )
     }
 }
 

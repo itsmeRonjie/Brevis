@@ -22,7 +22,7 @@ struct Theme {
     static let subtitleColor: Color = .red
     
     
-    func layout(isIPad: Bool) -> AnyLayout {
+    static func layout(isIPad: Bool) -> AnyLayout {
         isIPad ?
         AnyLayout(VStackLayout(alignment: .leading)) :
         AnyLayout(HStackLayout())
@@ -31,28 +31,6 @@ struct Theme {
 }
 
 #else
-struct Theme {
-    static let font: Font = .headline
-    static let secondaryFont: Font = .body
-    static let fontWeight: Font.Weight = .regular
-    static let modifierFont: Font = .headline
-    static let frameWidth: CGFloat? = nil
-    static let frameHeight: CGFloat? = nil
-    static let listStyle = DefaultListStyle()
-    static let sectionHeaderFont: Font = .body
-    static let hotkeyWidth: CGFloat? = nil
-    static let subtitleColor: Color = .red
-    
-    
-    func layout(isIPad: Bool) -> AnyLayout {
-        isIPad ?
-        AnyLayout(VStackLayout(alignment: .leading)) :
-        AnyLayout(HStackLayout())
-    }
-    
-}
-
-#endif
 struct Theme {
     static let font: Font = .title
     static let secondaryFont: Font = .title
@@ -66,7 +44,9 @@ struct Theme {
     static let subtitleColor: Color = .red
     
     
-    func layout() -> AnyLayout {
+    static func layout(isIPad: Bool) -> AnyLayout {
         AnyLayout(HStackLayout())
     }
 }
+
+#endif

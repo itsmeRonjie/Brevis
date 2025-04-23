@@ -11,9 +11,9 @@ struct HotkeySectionView: View {
     let categoryName: String
     let hotkeyModels: [HotkeyModel]
     let searchQuery: String
-    let sectionHeaderFont: Font = .headline
-    let sectionHeaderFontWeight: Font.Weight = .semibold
-    let sectionHeaderColor: Color = .red
+    let sectionHeaderFont: Font = Theme.sectionHeaderFont
+    let sectionHeaderFontWeight: Font.Weight = Theme.fontWeight
+    let subtitleColor: Color = Theme.subtitleColor
     
     var filteredHotkeyModels: [HotkeyModel] {
         if searchQuery.count <= 1 {
@@ -22,7 +22,6 @@ struct HotkeySectionView: View {
         return hotkeyModels.filter {
             $0.text.lowercased().contains(searchQuery.lowercased())
         }
-        
     }
     
     var body: some View {
@@ -38,7 +37,7 @@ struct HotkeySectionView: View {
                 Text(categoryName)
                     .font(sectionHeaderFont)
                     .fontWeight(sectionHeaderFontWeight)
-                    .foregroundStyle(sectionHeaderColor)
+                    .foregroundStyle(subtitleColor)
             }
         }
     }
